@@ -11,16 +11,22 @@ namespace DesignPatrrens
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("--- Cleint orders pizaa---");
+            //Console.WriteLine("--- Cleint orders pizaa---");
 
-            var serviceProvider = new ServiceCollection()
-                .AddScoped<IBread, BreadProvider>().AddSingleton<IPizza, PizzaProvider>()
-                .AddSingleton<RestaurantFacade>().BuildServiceProvider();
+            //var serviceProvider = new ServiceCollection()
+            //    .AddScoped<IBread, BreadProvider>().AddSingleton<IPizza, PizzaProvider>()
+            //    .AddSingleton<RestaurantFacade>().BuildServiceProvider();
 
-            var facadeForCleint = serviceProvider.GetService<RestaurantFacade>();
+            //var facadeForCleint = serviceProvider.GetService<RestaurantFacade>();
 
-            facadeForCleint.GetVegPizza();
-            Console.WriteLine("--- Cleint orders pizaa complted---");
+            //facadeForCleint.GetVegPizza();
+            //Console.WriteLine("--- Cleint orders pizaa complted---");
+
+            var obj =  Singleton1.Instance;
+            var obj1 = Singleton1.Instance;
+            Console.WriteLine(obj);
+            Console.WriteLine(obj1);
+            Console.ReadLine();
         }
     }
 }
