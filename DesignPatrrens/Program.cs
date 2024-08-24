@@ -22,11 +22,11 @@ namespace DesignPatrrens
             //facadeForCleint.GetVegPizza();
             //Console.WriteLine("--- Cleint orders pizaa complted---");
 
-            var obj =  Singleton1.Instance;
-            var obj1 = Singleton1.Instance;
-            Console.WriteLine(obj);
-            Console.WriteLine(obj1);
-            Console.ReadLine();
+            //var obj =  Singleton1.Instance;
+            //var obj1 = Singleton1.Instance;
+            //Console.WriteLine(obj);
+            //Console.WriteLine(obj1);
+            //Console.ReadLine();
         }
     }
 }
