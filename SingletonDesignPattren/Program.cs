@@ -13,12 +13,18 @@ namespace SingletonDesignPattren
             Singleton5 obj3;
             Singleton5 obj4;
 
-            Parallel.Invoke(
-               () => obj3 = Singleton5.Instance
-               //() => obj4 = Singleton5.Instance
-            );
+            //Parallel.Invoke(
+            //   () => obj3 = Singleton5.Instance
+            //   //() => obj4 = Singleton5.Instance
+            //);
 
-            obj4 = Singleton5.Instance;
+            //obj4 = Singleton5.Instance;
+
+            DatabaseConnection obj1;
+            DatabaseConnection obj2;
+
+            obj1= DatabaseConnection.Instance;
+            obj2 = DatabaseConnection.Instance;
         }
     }
 }
